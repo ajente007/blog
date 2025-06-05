@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/images/uploads"
-public_folder: "/assets/images/uploads"
+media_folder: "assets/images/uploads" # Carpeta donde se guardan imágenes en el repositorio
+public_folder: "/assets/images/uploads" # Ruta pública de acceso a las imágenes
 
 collections:
   - name: "posts"
@@ -12,6 +12,12 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
-      - { label: "Contenido", name: "body", widget: "markdown" }
+      - label: "Título"
+        name: "title"
+        widget: "string"
+      - label: "Fecha"
+        name: "date"
+        widget: "datetime"
+      - label: "Contenido"
+        name: "body"
+        widget: "markdown"
