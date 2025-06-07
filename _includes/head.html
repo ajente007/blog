@@ -10,8 +10,8 @@
     window.netlifyIdentity.init();
   }
 </script>
-
-
+  <!-- Dark theme stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/dark.css' | relative_url }}">
 
 <head>
 	<meta charset="utf-8">
@@ -19,8 +19,7 @@
 
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
-  <!-- Dark theme stylesheet -->
-  <link rel="stylesheet" href="{{ '/assets/css/dark.css' | relative_url }}">
+
 	
     <meta content="{{ site.title }}" property="og:site_name">
   {% if page.title %}
