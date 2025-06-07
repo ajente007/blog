@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  a {
+    color: #bb86fc;
+  }
+  /* Ajusta más selectores según tu tema: */
+  header, footer, .post-content, .sidebar {
+    background-color: #1f1f1f;
+  }
+  img {
+    filter: brightness(0.9);
+  }
+  /* … */
+}
