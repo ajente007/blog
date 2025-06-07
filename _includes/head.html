@@ -1,3 +1,18 @@
+<!-- Netlify Identity widget -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        // Redirige aquí si quieres forzar login antes de /admin
+      }
+    });
+    window.netlifyIdentity.init();
+  }
+</script>
+
+
+
 <head>
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
