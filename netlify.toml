@@ -5,3 +5,9 @@
 [build.environment]
   NODE_VERSION = "16"
   PYTHON_VERSION = "3.9"
+
+[[identity.external_provider]]
+  provider       = "auth0"
+  client_id      = "AUNrD9aHkbEFRK3ULU7Lampz3fSG8jUl"
+  client_secret  = "4Jl5CpEv6bNzxuVFrmyWDWvULBI86jH9iBHRNzzsle1V3Ce3tBe6Jug_vCgXAUln"
+  auth0_config   = { domain = " dev-67dz1qdpc75ighw7.auth0.com" }
