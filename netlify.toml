@@ -1,7 +1,7 @@
 [build]
   command = "jekyll build"
   publish = "_site"
-  base = "master"
+  base = "main"
 
 [build.environment]
   NODE_VERSION = "16"
